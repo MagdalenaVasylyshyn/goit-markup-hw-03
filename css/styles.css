@@ -50,7 +50,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo-black-letters {
@@ -72,6 +72,7 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   line-height: 1.17;
+  margin-right: 76px;
 }
 
 .page-navigation {
@@ -88,7 +89,7 @@ p {
     gap: 40px;
 }
 
-.menu-navigation-item {
+.menu-navigation-item:first-child {
     padding: 24px 0;
 }
 
@@ -194,6 +195,7 @@ p {
 .success-section {
   padding-top: 104px;
   padding-bottom: 67px;
+  padding: 120px 0
 }
 
 .success-title {
@@ -242,6 +244,7 @@ p {
 
 .our-team-section {
   padding-bottom: 120px;
+  padding: 120px 0
 }
 
 .our-team-menu {
@@ -263,6 +266,10 @@ p {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.our-team-menu-item:first-child {
+    width: calc((100% - 72px) / 4);
+}
+
 .team-member-container {
     padding: 32px 0;
 }
@@ -279,6 +286,7 @@ p {
   line-height: 1.2;
   text-align: center;
   margin-bottom: 8px;
+
 }
 
 .team-member-profession {
@@ -306,6 +314,7 @@ p {
   text-transform: capitalize;
   padding-top: 120px;
   padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .our-portfolio-menu {
@@ -329,6 +338,7 @@ p {
   letter-spacing: 0.02em;
   padding-bottom: 8px;
   padding-left: 16px;
+  margin-bottom: 8px;
 }
 
 .our-portfolio-menu-item {
@@ -375,4 +385,21 @@ footer {
   line-height: 1.5;
   padding-top: 17px;
   width: 264px;
+}
+
+.page-footer-container {
+    padding: 100px 0;
+}
+
+.logo-title-footer {
+    color: #4d5ae5;
+    font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.17;
+        margin-right: 76px;
+        margin-bottom: 16px;
+        display: inline-block;
 }
