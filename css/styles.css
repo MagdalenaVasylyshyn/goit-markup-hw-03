@@ -8,7 +8,18 @@ body {
 * {
     text-decoration: none;
 }
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 ul {
     list-style: none;
     margin-top: 0;
@@ -59,6 +70,7 @@ h1, h2, h3, h4, h5, h6, p {
 .page-navigation {
     display: flex;
     align-items: center;
+    margin-right: auto;
 }
 .menu {
     display: flex;
@@ -116,15 +128,21 @@ h1, h2, h3, h4, h5, h6, p {
 
 .effective-solutions-section {
     background-color: #2E2F42;
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
-
 .effective-solutions-title {
+    display: flex;
     color: #FFF;
     font-size: 56px;
     font-weight: 700;
     letter-spacing: 0.02em;
     line-height: 1.07;
-    text-align: center;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .order-service-button {
@@ -136,11 +154,21 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.04em;
     line-height: 1.50;
     cursor: pointer;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
 }
 
 .order-service-button:hover,
 .order-service-button:focus {
     background-color: #404BBF;
+}
+
+.success-section {
+    padding-top: 104px;
+    padding-bottom: 67px;
 }
 
 .success-title {
@@ -157,6 +185,15 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 1.50;
+}
+
+.success-menu {
+    display: flex;
+    column-gap: 24px;
+}
+
+.success-menu-item {
+    width: calc((100% - 3 * 24px)/ 4);
 }
 
 .our-team-title {
